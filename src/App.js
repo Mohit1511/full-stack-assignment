@@ -29,12 +29,7 @@ export default function App() {
     window.location.reload();
   } 
 
-  useEffect(() => {
-    // const handleChange= () => {
-    //   setValue(value)
-    // };
-    fetchImages();
-  }, [value]);
+ 
 
   let flag = true
   const fetchImages = (count = 1000) => {
@@ -96,7 +91,9 @@ export default function App() {
     } 
   }
 
-  
+  useEffect(() => {
+    fetchImages();
+  }, [value]);
 
   return (
     <div>
