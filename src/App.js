@@ -21,9 +21,16 @@ export default function App() {
   const [images, setImage] = useState([]);
   const [value, setValue] = useState("animation")
   const [x, setX] = useState("animation")
+  const access_key = 'hb7ehDWO_XjgSKsTvRPNYAX8bcVJnOWA9ITddPjX_pw'
+  // const api = createApi({
+  //   accessKey: process.env.REACT_APP_ACCESSKEY
+  // });
+
   const api = createApi({
-    accessKey: process.env.REACT_APP_ACCESSKEY
+    accessKey: access_key
   });
+
+  
 
   function refreshPage(){
     window.location.reload();
