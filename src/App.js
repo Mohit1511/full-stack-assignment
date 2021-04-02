@@ -30,9 +30,9 @@ export default function App() {
   } 
 
   useEffect(() => {
-    const handleChange= () => {
-      setValue(value)
-    };
+    // const handleChange= () => {
+    //   setValue(value)
+    // };
     fetchImages();
   }, [value]);
 
@@ -45,7 +45,7 @@ export default function App() {
         perPage: 30,
         })
         .then(res => {
-          console.log(value)
+          // console.log(value)
           if(x !== value)
           {
             setX(value);
@@ -62,7 +62,7 @@ export default function App() {
           flag = false;
           
           
-          console.log(images.length)
+          // console.log(images.length)
         })
         .catch(() => {
           console.log("something went wrong!");
