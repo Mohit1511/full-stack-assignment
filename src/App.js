@@ -36,10 +36,8 @@ export default function App() {
     window.location.reload();
   } 
 
- 
-
   let flag = true
-  const fetchImages = (count = 1000) => {
+  const fetchImages = () => {
 
     if(flag) {
       api.search.getPhotos({ 
